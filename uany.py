@@ -5,7 +5,6 @@ from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain_core.prompts import PromptTemplate   
 from langchain.chains import LLMChain
 from langchain_community.vectorstores import FAISS
-<<<<<<< HEAD
 from pydantic import SecretStr
 
 # from dotenv import load_dotenv
@@ -19,19 +18,6 @@ def create_vector_db_from_youtube_url(video_url : str, api_key: str) -> FAISS:
     transcript = loader.load()
     embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001", google_api_key= SecretStr(api_key))
 
-=======
-
-from dotenv import load_dotenv
-
-load_dotenv()
-
-embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
-
-def create_vector_db_from_youtube_url(video_url : str) -> FAISS:
-    loader  = YoutubeLoader.from_youtube_url(video_url)
-    transcript = loader.load()
-    
->>>>>>> 9aaba28c3a31f9ffbe9ed90948ec154c8d6947d7
     text_splitter = RecursiveCharacterTextSplitter(chunk_size = 1000, chunk_overlap = 100)
     docs = text_splitter.split_documents(transcript)
     
@@ -39,11 +25,7 @@ def create_vector_db_from_youtube_url(video_url : str) -> FAISS:
     
     return db
 
-<<<<<<< HEAD
 def get_response_from_query(db,query,api_key: str,k =4):
-=======
-def get_response_from_query(db,query,k =4):
->>>>>>> 9aaba28c3a31f9ffbe9ed90948ec154c8d6947d7
     #can handle only 4097 tokens
     
     docs = db.similarity_search(query, k=k)
@@ -51,10 +33,7 @@ def get_response_from_query(db,query,k =4):
     
     llm = llm = ChatGoogleGenerativeAI(
     model="gemini-2.0-flash",
-<<<<<<< HEAD
     google_api_key=SecretStr(api_key),
-=======
->>>>>>> 9aaba28c3a31f9ffbe9ed90948ec154c8d6947d7
     temperature=0,
     max_tokens=None,
     timeout=None,
