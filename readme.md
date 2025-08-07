@@ -1,4 +1,4 @@
-# 🎥 YouTube Assistant using Gemini AI + LangChain + Streamlit
+# 🎥 YouTube Video Summeriser Assistant using Google Gemini AI + LangChain + Streamlit
 
 This project is an intelligent YouTube assistant that allows you to query any YouTube video and get meaningful, context-rich answers based solely on the video’s transcript. It uses **LangChain**, **Google Gemini AI**, **FAISS**, and **Streamlit** to create a vector-based retrieval-augmented generation (RAG) system.
 
