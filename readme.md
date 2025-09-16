@@ -6,22 +6,22 @@ This project is an intelligent YouTube assistant that allows you to query any Yo
 
 ## 🚀 Features
 
-- ✅ Extracts transcripts from YouTube videos using `YoutubeLoader`
-- ✅ Embeds transcripts using `GoogleGenerativeAIEmbeddings`
-- ✅ Stores embeddings in a FAISS vector store
-- ✅ Uses Gemini (Google Generative AI) LLM to answer queries
-- ✅ Fully interactive via a web UI (Streamlit)
-- ✅ Securely accepts Gemini API Key at runtime (no `.env` required)
+- Extracts transcripts from YouTube videos using `YoutubeLoader`
+- Embeds transcripts using `GoogleGenerativeAIEmbeddings`
+- Stores embeddings in a FAISS vector store
+- Uses Gemini (Google Generative AI) LLM to answer queries
+- Fully interactive via a web UI (Streamlit)
+- Securely accepts Gemini API Key at runtime (no `.env` required)
 
 ---
 
-## 📸 Demo
+##  Demo
 
 ![Screenshot](/Screenshot.png) 
 
 ---
 
-## 🔧 Installation
+##  Installation
 
 ### 1. Clone the repository
 
@@ -44,7 +44,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🧠 Usage
+##  Usage
 
 ### 1. Run the Streamlit app
 ```bash
@@ -61,7 +61,7 @@ streamlit run main.py
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```bash
 ├── main.py             # Streamlit frontend
@@ -72,7 +72,7 @@ streamlit run main.py
 
 ---
 
-## 📦 Requirements
+##  Requirements
 
 Here’s a sample of what’s inside requirements.txt:
 
@@ -90,7 +90,7 @@ Though it is adviced to use [requirements.txt]() file only.
 
 ---
 
-## 🔐 Security
+##  Security
 
 - This app does not save your API key anywhere.
 
@@ -98,13 +98,13 @@ Though it is adviced to use [requirements.txt]() file only.
 
 ---
 
-## 📜 License
+##  License
 
 This project is licensed under the  GPL-3.0 license.
 
 ---
 
-## 🙌 Acknowledgements
+##  Acknowledgements
 
 - [LangChain](https://www.langchain.com/)
 
@@ -116,7 +116,7 @@ This project is licensed under the  GPL-3.0 license.
 
 ---
 
-## 💡 Future Improvements
+##  Future Improvements
 
 -    Add support for multilingual transcripts
 
@@ -125,12 +125,6 @@ This project is licensed under the  GPL-3.0 license.
 -    Export answers as PDF or Markdown
 
 -    UI enhancements
-
----
-
-## 👨‍💻 Author
-
-[Yuvraj-ai](https://github.com/Yuvraj-ai)
 
 ---
 
